@@ -1,23 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import MovieCard from "./components/movieCard/MovieCard";
+import { useState } from "react";
+import { moviesList } from "./Data";
+import NavBar from "./components/navBar/NavBar";
+import AddMovie from "./components/addMovie/AddMovie";
 
 function App() {
+  //--------------------------------------state-----------------------------------
+  const [movies, setMovies] = useState(moviesList);
+  const [search, setSearch] = useState("");
+  const [starrate, setStarrate] = useState(1);
+  //-----------------------------------functions-----------------------------------
+  const handelesearch = (e) => {
+    setSearch(e.target.value);
+  };
+
+  const handeldelete = (id) => {
+    setMovies(movies.filter((el) => el.id !== id));
+  };
+  const handeladdmovie = (newmovie) => {
+    setMovies([...movies, newmovie]);
+  };
+  const handlerating = (x) => setStarrate(x);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar
+        search={search}
+        handelesearch={handelesearch}
+        sR={starrate}
+        hR={handlerating}
+      />
+      <MovieCard
+        Data={movies}
+        del={handeldelete}
+        search={search}
+        starrate={starrate}
+      />
+      <AddMovie add={handeladdmovie} />
     </div>
   );
 }
