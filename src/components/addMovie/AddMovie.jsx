@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button, Modal } from "react-bootstrap";
 import { FaCloudUploadAlt } from "react-icons/fa";
 
-const AddMovie = ({ add }) => {
+const AddMovie = ({ handeladdmovie }) => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -25,7 +25,7 @@ const AddMovie = ({ add }) => {
       description: desc,
     };
     if (name && imgURL && date && rate && desc) {
-      add(newMovie);
+      handeladdmovie(newMovie);
       handleClose();
     } else {
       alert("pls 3abi lblayes lkol 😐");
@@ -33,7 +33,7 @@ const AddMovie = ({ add }) => {
   };
 
   return (
-    <>
+    <div>
       <Button variant="primary" onClick={handleShow}>
         <FaCloudUploadAlt />
         <br />
@@ -83,14 +83,16 @@ const AddMovie = ({ add }) => {
               value={desc}
               onChange={(e) => setDesc(e.target.value)}
             />
-            <Button variant="primary">ADD</Button>
+            <Button variant="primary" type="submit">
+              ADD
+            </Button>
           </form>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary">Close</Button>
         </Modal.Footer>
       </Modal>
-    </>
+    </div>
   );
 };
 

@@ -19,8 +19,8 @@ function App() {
   const handeldelete = (id) => {
     setMovies(movies.filter((el) => el.id !== id));
   };
-  const handeladdmovie = (newmovie) => {
-    setMovies([...movies, newmovie]);
+  const handeladdmovie = (newMovie) => {
+    setMovies([...movies, newMovie]);
   };
   const handlerating = (x) => setStarrate(x);
   return (
@@ -37,7 +37,7 @@ function App() {
         search={search}
         starrate={starrate}
       />
-      <AddMovie add={handeladdmovie} />
+      <AddMovie handeladdmovie={handeladdmovie} />
     </div>
   );
 }
