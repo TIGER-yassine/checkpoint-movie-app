@@ -18,7 +18,7 @@ const AddMovie = ({ handeladdmovie }) => {
     e.preventDefault();
     const newMovie = {
       id: Math.random(),
-      name: name,
+      title: name,
       cover: imgURL,
       date: date,
       rating: rate,
@@ -51,6 +51,8 @@ const AddMovie = ({ handeladdmovie }) => {
               flexDirection: "column",
               alignItems: "center",
             }}
+            type="text"
+            value=""
             onSubmit={handleSubmit}
           >
             <label htmlFor="">name movie :</label>
@@ -88,9 +90,6 @@ const AddMovie = ({ handeladdmovie }) => {
             </Button>
           </form>
         </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary">Close</Button>
-        </Modal.Footer>
       </Modal>
     </div>
   );

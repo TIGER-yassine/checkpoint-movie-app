@@ -8,6 +8,17 @@ export const moviesList = [
     rating: 5,
     description:
       "Le groupe de Tanjirô a terminé son entraînement de récupération au domaine des papillons et embarque à présent en vue de sa prochaine mission à bord du train de l'infini, d'où quarante personnes ont disparu en peu de temps. Tanjirô et Nezuko, accompagnés de Zen'itsu et Inosuke, s'allient à l'un des plus puissants épéistes de l'armée des pourfendeurs de démons, le Pilier de la Flamme Kyôjurô Rengoku, afin de contrer le démon qui a engagé le train de l'Infini sur une voie funeste.",
+    vid: (
+      <iframe
+        width="1080"
+        height="720"
+        src="https://www.youtube.com/embed/bFwdl2PDAFM"
+        title="Demon Slayer -Kimetsu no Yaiba- The Movie: Mugen Train - Official Sub Trailer (English Subtitles)"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    ),
   },
   {
     id: Math.random(),
@@ -18,6 +29,17 @@ export const moviesList = [
     rating: 4,
     description:
       "Luffy et son équipage s apprêtent à assister à un festival de musique attendu avec impatience. La chanteuse la plus populaire du monde, Uta, va monter sur scène pour la première fois. Celle qui n’est autre que la fille du légendaire pirate Shanks Le Roux va révéler la puissance exceptionnelle de sa voix qui pourrait bien changer le monde…",
+    vid: (
+      <iframe
+        width="1273"
+        height="716"
+        src="https://www.youtube.com/embed/eU0i7L3cakI"
+        title="One Piece Film Red - Official Trailer (2022) English Subtitles"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    ),
   },
   {
     id: Math.random(),
@@ -27,6 +49,17 @@ export const moviesList = [
     rating: 4,
     description:
       "Dans un monde où la magie est reine, Asta, un garçon né sans pouvoirs, a l'ambition de devenir l'empereur-mage pour surmonter l'adversité, démontrer ses capacités et respecter le serment fait à ses amis.",
+    vid: (
+      <iframe
+        width="1273"
+        height="716"
+        src="https://www.youtube.com/embed/PrgxJ1_sUcs"
+        title="Black Clover: Sword of the Wizard King | Official Trailer | Netflix"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    ),
   },
   {
     id: Math.random(),
@@ -37,6 +70,17 @@ export const moviesList = [
     rating: 4,
     description:
       "Lorsqu’il était enfant, Yuta Okkotsu a vu son amie Rika Orimoto perdre la vie dans un terrible accident. Depuis, Rika vient hanter Yuta qui a même souhaité sa propre mort après avoir souffert des années de cette malédiction. Jusqu’au jour où le plus puissant des exorcistes, Satoru Gojo, l’accueille dans l’école d’exorcisme de Tokyo. Tandis que Yuta trouve enfin un nouveau sens à sa vie, une menace plane sur le monde. En effet, quelqu’un projette de déchaîner un millier de malédictions sur Shinjuku et Kyoto pour exterminer tous les non-exorcistes…",
+    vid: (
+      <iframe
+        width="1273"
+        height="716"
+        src="https://www.youtube.com/embed/2docezZl574"
+        title="JUJUTSU KAISEN 0 | OFFICIAL TRAILER 3"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    ),
   },
   {
     id: Math.random(),
@@ -47,6 +91,17 @@ export const moviesList = [
     rating: 2,
     description:
       "Taiju, un lycéen comme les autres, raconte à son meilleur ami Senku, un génie des sciences, qu'il est sur le point de révéler ses sentiments à Yuzuriha, une fille dont il est secrètement amoureux depuis quelques années. Alors que le jeune homme s'apprête à lui déclarer sa flamme, une lumière brillante apparaît dans le ciel et transforme toute l'humanité en statues … ",
+    vid: (
+      <iframe
+        width="1273"
+        height="716"
+        src="https://www.youtube.com/embed/7JwyoE2jZM0"
+        title="Dr. STONE - TRAILER OFFICIEL | Crunchyroll"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    ),
   },
   {
     id: Math.random(),
@@ -57,6 +112,17 @@ export const moviesList = [
     rating: 3,
     description:
       "Animation Action Drama Hanagaki Takemichi lives an unsatisfying life right up until his death. Waking up 12 years in the past, he reckons with the eventual fate of his friends and tries to prevent an unfortunate future. ",
+    vid: (
+      <iframe
+        width="1273"
+        height="716"
+        src="https://www.youtube.com/embed/idlLFNNpZiI"
+        title="Tokyo Revengers | OFFICIAL TRAILER"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    ),
   },
   {
     id: Math.random(),
@@ -67,5 +133,16 @@ export const moviesList = [
     rating: 3,
     description:
       "In the wake of Eren Yeager's cataclysmic actions, his friends and former enemies form an alliance against his genocidal rampage. Though once bitter foes, Armin Arlert, Mikasa Ackerman, and the remaining members of the Scout Regiment join forces with Reiner Braun and the survivors of the Marleyan military. Their meager united front sets out on a mission to stop Eren's wrath and—if possible—save their old comrade in the process.",
+    vid: (
+      <iframe
+        width="1273"
+        height="716"
+        src="https://www.youtube.com/embed/E7WytLM2KvY"
+        title="Attack on Titan Final Trailer｜Final Season Part 4"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    ),
   },
 ];
