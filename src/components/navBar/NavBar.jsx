@@ -1,6 +1,6 @@
 import { Button, Navbar } from "react-bootstrap";
 import StarR from "../StarR";
-import { RiMovie2Line } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const NavBar = ({ search, handelesearch, sR, hR }) => {
   return (
@@ -15,15 +15,12 @@ const NavBar = ({ search, handelesearch, sR, hR }) => {
       >
         <Navbar.Brand
           href="#"
-          style={{
-            display: "flex",
-            color: "white",
-            marginLeft: 100,
-          }}
+          style={{ display: "flex", color: "white", marginLeft: 100 }}
         >
-          <RiMovie2Line style={{ color: "green" }} />
-          <h5 style={{ color: "blueviolet" }}>Movie</h5>
-          <h5 style={{ color: "green" }}>/Room</h5>
+          <Link to={"/"} style={{ display: "flex", textDecoration: "none" }}>
+            <h5 style={{ color: "blueviolet" }}>Movie</h5>
+            <h5 style={{ color: "green" }}>/Room</h5>
+          </Link>
         </Navbar.Brand>
         <div>
           <form action="">
